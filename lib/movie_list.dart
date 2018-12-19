@@ -80,7 +80,7 @@ class MovieListState extends State<MovieList> {
 
 Future<Map> getJson() async {
   var url =
-      'http://api.themoviedb.org/3/discover/movie?api_key=398df9fa06ef9233262ebc5d74a35f65';
+      'http://api.themoviedb.org/3/discover/movie?api_key=YOUR OWN API KEY';
   http.Response response = await http.get(url);
   return json.decode(response.body);
 }
